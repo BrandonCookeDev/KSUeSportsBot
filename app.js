@@ -63,8 +63,8 @@ mybot.on("message", function(message){
     	
     	if(command === "heart"){
     		try{
-    			logCommand(user, 'thumb');
-    			commands.thumb(message);
+    			logCommand(user, 'heart');
+    			commands.heart(message);
 	    	}catch(err){
 	    		botlog.botlog(err);
 	    		mybot.sendMessage(message.channel, 'An error occured. Please yell at cookiE');
@@ -135,7 +135,7 @@ if (cluster.isWorker) {
 				process.exit();
 			}); 	  //TEST 
 		else if(config.target === "prod")
-			mybot.login("ckscookiessbm@gmail.com", "botmedaddy!").then(loginSuccess).catch(function(){
+			mybot.login("ksudiscord@gmail.com", "ksuDiscord!").then(loginSuccess).catch(function(){
 				sleep(5000);
 				process.exit();
 			});   //PROD
@@ -159,14 +159,6 @@ function loginSuccess(token)
 		config.connected = true;
 		
 		//INIT PICTURE ARRAYS
-		if(falconImgs.length == 0)
-			initPictureArray(imgs.falconDir, falconImgs);
-		
-		if(bruceImgs.length == 0)
-			initPictureArray(imgs.bruceDir, bruceImgs);	
-		
-		if(ragsImgs.length == 0)
-			initPictureArray(imgs.ragsDir, ragsImgs);
 	}
 	catch(err)
 	{

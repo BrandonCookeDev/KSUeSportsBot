@@ -1,0 +1,25 @@
+{
+  "name": "ksu_esports_bot",
+  "version": "1.0.0",
+  "description": "An automated bot for KSU eSports Discord",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrandonCookeDev/KSUeSportsBot.git"
+  },
+  "author": "Brandon Cooke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrandonCookeDev/KSUeSportsBot/issues"
+  },
+  "homepage": "https://github.com/BrandonCookeDev/KSUeSportsBot#readme",
+  "dependencies": {
+    "discord.js": "^6.0.0",
+    "express": "^4.13.4",
+    "path": "^0.12.7",
+    "request": "^2.69.0"
+  }
+}

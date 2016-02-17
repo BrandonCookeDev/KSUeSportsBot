@@ -40,7 +40,7 @@ exports.thumb = function(message){
 
 exports.heart = function(message){
 	var heartStream = fs.createReadStream(imgs.heartImg);
-	message.client.sendFile(message.channel, heartStream, 'thumb.jpg');
+	message.client.sendFile(message.channel, heartStream, 'heart.png');
 };
 
 exports.google = function(message, searchCriteria){
