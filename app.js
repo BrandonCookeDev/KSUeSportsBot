@@ -74,7 +74,7 @@ mybot.on("message", function(message){
     	if(command === 'love'){
     		try{
     			logCommand(user, 'love');
-    			commands.love(message, user, tyusUsername);
+    			commands.love(message, user);
     		}catch(err){
     			console.log(err);
     		}

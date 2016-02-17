@@ -19,9 +19,9 @@ exports.game = function(message, user, game){
 };
 
 /** SILLY **/
-exports.love = function(message, user, tyusUsername){
+exports.love = function(message, user){
 	var arr = arrays.love;
-	if(!(user.username === tyusUsername)){
+	if(true){
 		var index = Math.floor(Math.random() * arr.length);
 		var loveMsg = arr[index];
 		message.client.reply(message, loveMsg, function(err){
